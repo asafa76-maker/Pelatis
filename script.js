@@ -16,7 +16,9 @@
   // ---- Town, socials, year ----
   document.querySelectorAll("[data-town]").forEach(function (el) { el.textContent = cfg.town || ""; });
   document.querySelectorAll("[data-instagram]").forEach(function (a) { a.href = cfg.instagram || "#"; });
-  document.querySelectorAll("[data-facebook]").forEach(function (a) { a.href = cfg.facebook || "#"; });
+  document.querySelectorAll("[data-facebook]").forEach(function (a) {
+    if (cfg.facebook) a.href = cfg.facebook; else a.hidden = true;
+  });
   document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
 
   // ---- Menu ----
@@ -69,6 +71,13 @@
       var msg = msgEl.value.trim();
       if (!name) { nameEl.focus(); return; }
       var text = "היי רחלי, שמי " + name + (msg ? ".\n" + msg : ". אשמח לפרטים על הסטודיו 🙂");
+      var isBusiness = /^https?:\/\//.test(cfg.whatsapp || "");
+      if (isBusiness) {
+        // A business short link opens the chat but cannot carry text, so copy it for pasting.
+        var note = form.querySelector(".copied-note");
+        var done = function () { note.textContent = "ההודעה הועתקה - הדביקו אותה בצ'אט שנפתח 🙂"; };
+        if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
+      }
       window.open(waLink(text), "_blank", "noopener");
     });
   }
