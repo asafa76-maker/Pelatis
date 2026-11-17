@@ -9,5 +9,5 @@ window.SITE_CONFIG = {
   town: "בית חשמונאי",
 
   instagram: "https://www.instagram.com/pilates.by.racheli/",
-  facebook: "" // חסר - להוסיף קישור לעמוד הפייסבוק
+  facebook: "https://www.facebook.com/share/r/19okE2cAx8/"
 };
