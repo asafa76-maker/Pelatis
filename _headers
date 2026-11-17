@@ -1,0 +1,5 @@
+# Cloudflare Pages: always check for a newer page, styles and scripts
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+/images/*
+  Cache-Control: public, max-age=86400
