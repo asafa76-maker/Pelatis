@@ -173,6 +173,14 @@ p { margin: 0 0 1em; }
 .card p { margin: 0; color: var(--c-muted); }
 .card-feature { border-top: 4px solid var(--c-primary); }
 
+/* ===== Principles ===== */
+.principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 12px; margin: 30px 0 26px; }
+.principles > div { background: var(--c-card); border-radius: 14px; padding: 16px 12px; text-align: center; box-shadow: var(--shadow); }
+.principles h4 { margin: 0 0 4px; font-size: 1.1rem; }
+.principles p { margin: 0; font-size: .95rem; color: var(--c-muted); line-height: 1.5; }
+.machines { color: var(--c-muted); }
+.machines strong { color: var(--c-primary-dark); font-weight: 600; }
+
 /* ===== Timeline ===== */
 .timeline { list-style: none; padding: 0; margin: 40px 0; position: relative; }
 .timeline::before {
