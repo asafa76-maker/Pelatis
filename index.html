@@ -33,7 +33,7 @@
     "sameAs": ["https://www.instagram.com/pilates.by.racheli/"]
   }
   </script>
-  <link rel="stylesheet" href="styles.css?v=17">
+  <link rel="stylesheet" href="styles.css?v=18">
 </head>
 <body>
 <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
@@ -48,6 +48,7 @@
       <span class="logo-sub">by Racheli Aharon</span>
     </span>
   </a>
+  <a class="btn btn-primary header-cta" data-wa data-msg="היי רחלי, אשמח לתאם שיעור ניסיון 🙂">שיעור ניסיון</a>
   <button class="menu-btn" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="menu">
     <span></span><span></span>
   </button>
@@ -58,13 +59,13 @@
   <ul>
     <li><a href="#top">דף הבית</a></li>
     <li><a href="#studio">נעים להכיר</a></li>
+    <li><a href="#gallery">הסטודיו</a></li>
     <li><a href="#fit">למי זה מתאים</a></li>
     <li><a href="#method">השיטה</a></li>
     <li><a href="#founder">ממציא השיטה</a></li>
     <li><a href="#small">למה 4 מיטות</a></li>
     <li><a href="#times">אימונים ומסלולים</a></li>
     <li><a href="#faq">שאלות נפוצות</a></li>
-    <li><a href="#gallery">גלריה</a></li>
     <li><a href="#contact">בואו נדבר</a></li>
   </ul>
 </nav>
@@ -96,8 +97,7 @@
         בניתי אותו כמקום שבו אפשר לעצור לשעה, לנשום ולעבוד עם הגוף בצורה מדויקת ונכונה.
       </p>
       <p>
-        בסטודיו ארבע מיטות בלבד, וזו בחירה מכוונת. כשיש לי ארבעה מתאמנים, אני רואה כל תנועה, מתקנת כל תנוחה
-        ומתאימה כל תרגיל – כך שמי שמגיעים בפעם הראשונה ומי שמתאמנים שנים מקבלים בדיוק את מה שהם צריכים.
+        בסטודיו ארבע מיטות בלבד, וזו בחירה מכוונת: ככה כל אחד ואחת מקבלים יחס אישי ואימון שמותאם בדיוק אליהם.
       </p>
       <p>
         אני מאמינה שאימון טוב לא צריך להיות רועש או מתיש. הוא צריך להיות חכם, עקבי ומותאם אליכם.
@@ -105,6 +105,21 @@
       </p>
       <p class="signature">רחלי אהרון</p>
       <a class="btn btn-outline" href="#fit">למי זה מתאים?</a>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="center">הסטודיו</h2>
+      <div class="gallery">
+        <div class="ph"><img src="images/studio-class.jpg" alt="רחלי מדריכה אימון רפורמר בקבוצה קטנה" loading="lazy"></div>
+        <div class="ph"><img src="images/studio-1.jpg" alt="מתאמנת על הרפורמר" loading="lazy"></div>
+        <div class="ph"><img src="images/studio-3.jpg" alt="אימון זוגי בסטודיו" loading="lazy"></div>
+        <div class="ph"><img src="images/studio-day.jpg" alt="סטודיו פילאטיס מכשירים בבית חשמונאי באור יום – מיטות רפורמר תחת פרגולת עץ" loading="lazy"></div>
+        <div class="ph"><img src="images/studio-4.jpg" alt="תרגיל רגליים ברצועות על הרפורמר" loading="lazy"></div>
+        <div class="ph"><img src="images/studio-2.jpg" alt="אימון על מכשיר הטאוור בסטודיו" loading="lazy"></div>
+      </div>
     </div>
   </section>
 
@@ -193,18 +208,12 @@
     <div class="container narrow center">
       <h2>מתי מתאמנים?</h2>
       <p class="lead">שיעורים לאורך כל השבוע – בבקרים, אחר הצהריים ובערבים, וגם בשישי בבוקר, כך שתמיד יש שעה שמתאימה לכם.</p>
-      <div class="grid grid-2 times">
-        <article class="card time-card">
-          <span class="time-icon" aria-hidden="true">☀</span>
-          <h3 class="h4">אימוני בוקר</h3>
-          <p>להתחיל את היום עם אנרגיה, יציבה ונשימה.</p>
-        </article>
-        <article class="card time-card">
-          <span class="time-icon" aria-hidden="true">☾</span>
-          <h3 class="h4">אחר הצהריים וערב</h3>
-          <p>לשחרר את היום, להתחזק ולהירגע.</p>
-        </article>
-      </div>
+      <ul class="time-pills" aria-label="זמני אימון">
+        <li><span aria-hidden="true">☀</span> בקרים</li>
+        <li><span aria-hidden="true">◐</span> אחר הצהריים</li>
+        <li><span aria-hidden="true">☾</span> ערבים</li>
+        <li><span aria-hidden="true">✦</span> שישי בבוקר</li>
+      </ul>
       <p class="fine-print">השעות המדויקות משתנות מעת לעת. לשעות הפנויות השבוע – כתבו לנו בוואטסאפ.</p>
 
       <h3 class="sub-title" id="tracks">מסלולי אימון</h3>
@@ -243,7 +252,7 @@
         <li><span class="step-num">2</span><h3 class="h4">שיעור ניסיון</h3><p>מגיעים לסטודיו, מכירים את המכשירים ומרגישים את השיטה על הגוף.</p></li>
         <li><span class="step-num">3</span><h3 class="h4">בוחרים מסלול</h3><p>יחד נבחר את המסלול והשעות שמתאימים לכם – ומתחילים.</p></li>
       </ol>
-      <a class="btn btn-primary" data-wa data-msg="היי רחלי, אשמח לתאם שיעור ניסיון 🙂">אני רוצה להתחיל</a>
+      <a class="btn btn-primary" data-wa data-msg="היי רחלי, אשמח לתאם שיעור ניסיון 🙂">לתיאום שיעור ניסיון</a>
     </div>
   </section>
 
@@ -280,10 +289,6 @@
           <summary>איפה נמצא הסטודיו?</summary>
           <p>בבית חשמונאי שבמועצה אזורית גזר – כמה דקות נסיעה מכרמי יוסף, כפר בן נון, יד רמב"ם, פתחיה, שעלבים, נוף איילון, משמר איילון וממודיעין. את הכתובת המדויקת נשלח בוואטסאפ כשתקבעו שיעור.</p>
         </details>
-        <details>
-          <summary>מתי מתקיימים השיעורים?</summary>
-          <p>בבקרים, אחר הצהריים ובערבים לאורך השבוע, וגם בשישי בבוקר. השעות משתנות מעת לעת, אז הכי פשוט לשלוח הודעה ואעדכן מה פנוי.</p>
-        </details>
       </div>
     </div>
   </section>
@@ -314,22 +319,6 @@
     </div>
   </section>
   ===== /Testimonials -->
-
-  <!-- ===== Gallery ===== -->
-  <section id="gallery" class="section section-tint">
-    <div class="container">
-      <h2 class="center">הסטודיו</h2>
-      <div class="gallery">
-        <div class="ph ph-tall"><img src="images/studio-class.jpg" alt="רחלי מדריכה אימון רפורמר בקבוצה קטנה" loading="lazy"></div>
-        <div class="ph"><img src="images/studio-1.jpg" alt="מתאמנת על הרפורמר" loading="lazy"></div>
-        <div class="ph"><img src="images/studio-3.jpg" alt="אימון זוגי בסטודיו" loading="lazy"></div>
-        <div class="ph ph-tall"><img src="images/studio-day.jpg" alt="סטודיו פילאטיס מכשירים בבית חשמונאי באור יום – מיטות רפורמר תחת פרגולת עץ" loading="lazy"></div>
-        <div class="ph ph-wide"><img src="images/studio-4.jpg" alt="תרגיל רגליים ברצועות על הרפורמר" loading="lazy"></div>
-        <div class="ph"><img src="images/studio-2.jpg" alt="אימון על מכשיר הטאוור בסטודיו" loading="lazy"></div>
-        <div class="ph"><img src="images/studio-5.jpg" alt="אימון בסטודיו" loading="lazy"></div>
-      </div>
-    </div>
-  </section>
 
   <!-- ===== Contact ===== -->
   <section id="contact" class="section contact">
@@ -395,7 +384,7 @@
   <a href="accessibility.html">הצהרת נגישות</a>
 </div>
 
-<script src="config.js?v=17"></script>
-<script src="script.js?v=17"></script>
+<script src="config.js?v=18"></script>
+<script src="script.js?v=18"></script>
 </body>
 </html>
