@@ -8,6 +8,6 @@ window.SITE_CONFIG = {
 
   town: "בית חשמונאי",
 
-  instagram: "https://www.instagram.com/pilates.by.racheli/",
+  instagram: "https://www.instagram.com/pilates.by.racheli?evlk=MTY2Y201Z3AzdTRkYg==",
   facebook: "https://www.facebook.com/share/r/19okE2cAx8/"
 };
