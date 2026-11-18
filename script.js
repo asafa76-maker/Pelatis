@@ -75,7 +75,7 @@
       if (isBusiness) {
         // A business short link opens the chat but cannot carry text, so copy it for pasting.
         var note = form.querySelector(".copied-note");
-        var done = function () { note.textContent = "ההודעה הועתקה - הדביקו אותה בצ'אט שנפתח 🙂"; };
+        var done = function () { note.textContent = "ההודעה הועתקה – הדביקו אותה בצ'אט שנפתח 🙂"; };
         if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
       }
       window.open(waLink(text), "_blank", "noopener");
