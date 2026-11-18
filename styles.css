@@ -162,7 +162,7 @@ p { margin: 0 0 1em; }
 @media (min-width: 900px) {
   .hero { grid-template-columns: 1fr 1.1fr; grid-template-rows: none; min-height: calc(100svh - var(--header-h)); }
   .hero-content { align-self: center; padding: 60px 56px; }
-  .hero-sub { max-width: 30ch; margin-inline: auto; }
+  .hero-sub { margin-inline: auto; }
 }
 
 /* ===== Cards & grids ===== */
